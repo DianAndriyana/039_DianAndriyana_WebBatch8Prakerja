@@ -1,0 +1,1 @@
+alert("saya memamggil javascript dengan menggunakan latihan.js");
