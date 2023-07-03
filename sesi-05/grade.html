@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>menghitumg grade nilai siswa</title>
+  </head>
+  <body>
+    <h1>menghitung grade mahasiswa menggunakan js</h1>
+    <input type="number" id="nilai" />
+    <button type="button" onclick="hitungGrade()">hitung kelulusan</button>
+    <div id="hasil"></div>
+    <script>
+      function hitungGrade() {
+        let grade = "";
+        var nilai = document.getElementById("nilai").value;
+        if (nilai >= 90) {
+          grade = "A";
+        } else if (nilai >= 80) {
+          grade = "B";
+        } else if (nilai >= 70) {
+          grade = "C";
+        } else if (nilai >= 60) {
+          grade = "D";
+        } else {
+          grade = "E";
+        }
+        document.getElementById("hasil").innerHTML = grade;
+      }
+    </script>
+  </body>
+</html>

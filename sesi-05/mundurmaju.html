@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hitung mundur maju pada js</title>
+  </head>
+  <body>
+    <h1>hitung mundur maju :</h1>
+    <button id="mundur" onclick="mundur()">mundur</button>
+    <button id="maju" onclick="maju()">maju</button>
+
+    <div id="hasil"></div>
+
+    <script>
+      var hasil = document.getElementById("hasil");
+      var count = 0;
+      hasil.innerText = count;
+      // menjalankan function untuk mundur
+      function mundur() {
+        count = count - 1;
+        hasil.innerText = count;
+      }
+      // menjalankan function untuk maju
+      function maju() {
+        count = count + 1;
+        hasil.innerText = count;
+      }
+    </script>
+  </body>
+</html>

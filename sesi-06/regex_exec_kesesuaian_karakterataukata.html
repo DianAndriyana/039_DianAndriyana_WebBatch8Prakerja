@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>belajar regex untuk mencocokkan karakter atau kata</title>
+  </head>
+  <body>
+    <script>
+      var foo = "1 tahun itu 365 hari 1 hari itu 24 jam 1 jam itu 3600 detik";
+      //   var pola = /\d+/;    // ini untuk menampilkan 1 karakter saja yaitu angka 1
+      var pola = /\d+/g;
+
+      console.log(pola.exec(foo));
+      console.log(pola.exec(foo));
+      console.log(pola.exec(foo));
+      console.log(pola.exec(foo));
+      console.log(pola.exec(foo));
+      console.log(pola.exec(foo));
+      console.log(pola.exec(foo));
+    </script>
+  </body>
+</html>
